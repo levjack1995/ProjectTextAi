@@ -2,15 +2,14 @@
 #include <string>
 #include <stdio.h>
 #include <stdlib.h>
-
-using namespace std;
-
 #include <iostream>
 #include <cstring>
 #include <cmath>
+#include <cstdio>
+
+using namespace std;
 
 /* system implementation headers */
-#include <cstdio>
 
 // Constants for MD5Transform routine.
 #define S11 7
@@ -99,7 +98,6 @@ int const N = 128;
 int const QUANTITY_OF_CONJUNCTIONS = 15;
 
 string const WORD_CONJUNCTIONS[QUANTITY_OF_CONJUNCTIONS] = {"and", "as", "or", "then", "but", "if", "till", "how", "so", "because", "unless", "until", "although", "however", "whenever"};
-
 
 double calculateCoincidence(string wordsOfText[], string wordsOfFragment[], int arrSizeOfText, int arrSizeOfFragment)
 {
