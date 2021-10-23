@@ -47,7 +47,7 @@ body {
 #opacity {
   position: absolute;
   background-color: black;
-  background: url(../main.jpg);
+  background: url(/main.jpg);
   background-position: center center;
   background-size: cover;
   border-radius: 10px;
