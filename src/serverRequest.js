@@ -5,8 +5,8 @@ const infoTextArea = document.getElementById("info");
 const sendButton = document.getElementById("send");
 const openButton = document.getElementById("open");
 
-const serverIp = "3.141.21.191";
-const regExp = /[^(\d+(.\d+)?)]/g;
+const serverIp = "3.15.183.118";
+const regExp = /[^(\d+(.\d+)?)]/;
 
 const EMPTY_STRING = "";
 const MIN_WORDS_COUNT = 3;
