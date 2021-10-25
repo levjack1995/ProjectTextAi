@@ -123,7 +123,7 @@ double calculateCoincidence(string wordsOfText[], string wordsOfFragment[], int 
         j = 0;
     }
     double coincidenceRatio = ((double)counterOfCoincidence / quantityOfFragmentSelections);
-    return round(coincidenceRatio * 10000) / 10000;
+    return round(coincidenceRatio * 10000) / 100;
 }
 
 double antiPlagiarism(string fragment, string text)
