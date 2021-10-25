@@ -115,7 +115,10 @@ double calculateCoincidence(string wordsOfText[], string wordsOfFragment[], int 
         {
             string hashOfText = md5(wordsOfText[j] + wordsOfText[j + 1] + wordsOfText[j + 2]);
             if (hashOfFragment == hashOfText)
+            {
                 counterOfCoincidence++;
+                break;
+            }
         }
         j = 0;
     }
@@ -123,7 +126,7 @@ double calculateCoincidence(string wordsOfText[], string wordsOfFragment[], int 
     return round(coincidenceRatio * 10000) / 100;
 }
 
-double antiPlagiarism(string text, string fragment)
+double antiPlagiarism(string fragment, string text)
 {
     int arrSizeOfText = calculateCountOfMeanWords(text);
     int arrSizeOfFragment = calculateCountOfMeanWords(fragment);
