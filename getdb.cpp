@@ -10,12 +10,12 @@ const char server[] = "aws-simplified.cyizdp31wsyx.us-east-2.rds.amazonaws.com";
 const char user[] = "admin";
 const char password[] = "13092001";
 const char database[] = "TextAIDatabase";
-const char sqlQuery[] = "SELECT id, content FROM TestAIDatabase.EDocs WHERE TYPE = 'dissertation' OR TYPE = 'scientific article'";
+const char sqlQuery[] = "SELECT id, content FROM TextAIDatabase.EDocs WHERE TYPE = 'dissertation' OR TYPE = 'scientific article'";
 
 string getDb()
 {
-    MYSQL* conn;
-    MYSQL_RES* res;
+    MYSQL *conn;
+    MYSQL_RES *res;
     MYSQL_ROW row;
 
     int qstate;
@@ -23,7 +23,8 @@ string getDb()
 
     conn = mysql_init(NULL);
 
-    if (conn != NULL) {
+    if (conn != NULL)
+    {
         conn = mysql_real_connect(conn, server, user, password, database, 3306, NULL, 0);
     }
 
