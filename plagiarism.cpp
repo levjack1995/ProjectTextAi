@@ -539,9 +539,6 @@ MD5 &MD5::finalize()
     return *this;
 }
 
-//////////////////////////////
-
-// return hex representation of digest as string
 std::string MD5::hexdigest() const
 {
     if (!finalized)
@@ -555,22 +552,14 @@ std::string MD5::hexdigest() const
     return std::string(buf);
 }
 
-//////////////////////////////
-
 std::ostream &operator<<(std::ostream &out, MD5 md5)
 {
     return out << md5.hexdigest();
 }
-
-//////////////////////////////
 
 std::string md5(const std::string str)
 {
     MD5 md5 = MD5(str);
 
     return md5.hexdigest();
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> master
