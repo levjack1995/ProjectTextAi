@@ -89,7 +89,7 @@ int strCmp(char destStr[], char srcStr[]);
 bool isSeparator(char ch);
 bool isConjuction(string word);
 
-double antiPlagiarism(string fragment, string text);
+double antiPlagiarism(string text, string fragment);
 
 void putWordsInArray(string text, string strArray[]);
 string toLowerCase(string str);
@@ -126,7 +126,7 @@ double calculateCoincidence(string wordsOfText[], string wordsOfFragment[], int 
     return round(coincidenceRatio * 10000) / 100;
 }
 
-double antiPlagiarism(string fragment, string text)
+double antiPlagiarism(string text, string fragment)
 {
     int arrSizeOfText = calculateCountOfMeanWords(text);
     int arrSizeOfFragment = calculateCountOfMeanWords(fragment);
