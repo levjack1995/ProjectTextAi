@@ -236,6 +236,7 @@ body {
   height: 220px;
   padding: 10px;
   font-size: large;
+  resize: none;
 }
 .input-text {
   background: #f4f4f4;
@@ -245,6 +246,7 @@ body {
   height: 60px;
   padding: 10px;
   font-size: large;
+  resize: none;
 }
 
 .textContainer {
