@@ -1,11 +1,40 @@
+.page {
+  /* height: 100%; */
+}
 body {
   background: -o-linear-gradient(top, #4e54c8 0%, #8f94fb 100%), #4e54c8;
   background: linear-gradient(180deg, #4e54c8 0%, #8f94fb 100%), #4e54c8;
   background-image: url(backAiMind.jpg);
-  background-position: center;
+  background-position: absolute;
   background-size: 100vw 100vh;
   background-attachment: fixed;
   margin: 0 auto;
+  padding: 0 10px;
+  background-repeat: no-repeat;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows:
+    min-content
+    1fr
+    min-content;
+
+  /* background-position: absolute;
+
+  background-attachment: fixed;
+  margin: 0 auto; */
+  /* Если заполнение больше 1440 , 900 - тогда заполнение на 100 процентов .
+  Если нет - тогда абсолют сделать - фиксированное , чтобы сжималась и картинка оставать такого же размера. */
+}
+body:last-child {
+  margin-bottom: 46px;
+}
+.footer {
+  margin: 0 auto 5%;
+  display: flex;
+  width: 1180px;
+  background: #ffffff;
+  border: 2px solid #191f82;
+  border-radius: 10px;
 }
 
 .intro {
@@ -14,8 +43,8 @@ body {
   font-family: "Exo 2", sans-serif;
   font-style: normal;
   font-weight: 800;
-  font-size: 90px;
-  line-height: 108px;
+  font-size: 6.42em;
+  line-height: 1.2;
   text-align: center;
 
   color: #ffffff;
@@ -65,8 +94,8 @@ body {
   font-family: "Exo 2", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 50px;
-  line-height: 60px;
+  font-size: 3.57em;
+  line-height: 1.2;
   text-align: center;
   margin-bottom: 110px;
   color: #ffffff;
@@ -157,14 +186,7 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
 }
-.footer {
-  margin: 0 auto;
-  display: flex;
-  width: 1180px;
-  background: #ffffff;
-  border: 2px solid #191f82;
-  border-radius: 10px;
-}
+
 .containerLinks {
   height: 85px;
   width: 1180px;
@@ -224,4 +246,8 @@ body {
   filter: alpha(opacity=60);
   -moz-opacity: 0.6;
   opacity: 0.6;
+}
+
+ul {
+  list-style: none;
 }
