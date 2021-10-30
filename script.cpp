@@ -1,12 +1,13 @@
 #include <iostream>
 #include <string>
 #include <stdio.h>
+
+#include "plagiarism.cpp"
 #include <stdlib.h>
 #include <cgicc/CgiDefs.h>
 #include <cgicc/Cgicc.h>
 #include <cgicc/HTTPHTMLHeader.h>
 #include <cgicc/HTMLClasses.h>
-
 #include <boost/variant.hpp>
 #include <mysql.h>
 #include <mysql_connection.h>
