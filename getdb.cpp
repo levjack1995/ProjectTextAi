@@ -1,4 +1,5 @@
 #include <string>
+
 #include <boost/variant.hpp>
 #include <mysql.h>
 #include <mysql_connection.h>
