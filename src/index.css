@@ -263,6 +263,11 @@ body {
   width: 100%;
   text-align: center;
   color: white;
+  font-family: "Exo 2", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3.4vw;
+  line-height: 1.2;
   z-index: 9999;
 }
 
