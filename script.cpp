@@ -2,7 +2,6 @@
 #include <string>
 #include <stdio.h>
 
-#include "plagiarism.cpp"
 #include <stdlib.h>
 #include <cgicc/CgiDefs.h>
 #include <cgicc/Cgicc.h>
