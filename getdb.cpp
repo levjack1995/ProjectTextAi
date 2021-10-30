@@ -1,5 +1,4 @@
 #include <string>
-
 #include <boost/variant.hpp>
 #include <mysql.h>
 #include <mysql_connection.h>
@@ -10,7 +9,7 @@ const char server[] = "aws-simplified.cyizdp31wsyx.us-east-2.rds.amazonaws.com";
 const char user[] = "admin";
 const char password[] = "13092001";
 const char database[] = "TextAIDatabase";
-const char sqlQuery[] = "SELECT id, content FROM TextAIDatabase.EDocs WHERE TYPE = 'dissertation' OR TYPE = 'scientific article'";
+const char sqlQuery[] = "SELECT content FROM TextAIDatabase.EDocs WHERE TYPE = 'dissertation' OR TYPE = 'scientific article'";
 
 string getDb()
 {
