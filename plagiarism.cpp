@@ -7,10 +7,6 @@
 #include <cmath>
 #include <cstdio>
 
-using namespace std;
-
-/* system implementation headers */
-
 // Constants for MD5Transform routine.
 #define S11 7
 #define S12 12
@@ -106,6 +102,7 @@ double calculateCoincidence(string wordsOfText[], string wordsOfFragment[], int 
     int counterOfCoincidence = 0;
 
     int quantityOfTextSelections = arrSizeOfText - 2;
+
     int quantityOfFragmentSelections = arrSizeOfFragment - 2;
 
     for (i = 0; i < quantityOfFragmentSelections; i++)
@@ -130,7 +127,6 @@ double antiPlagiarism(string text, string fragment)
 {
     int arrSizeOfText = calculateCountOfMeanWords(text);
     int arrSizeOfFragment = calculateCountOfMeanWords(fragment);
-
     string *wordsOfText = new string[arrSizeOfText];
     string *wordsOfFragment = new string[arrSizeOfFragment];
 
@@ -542,6 +538,9 @@ MD5 &MD5::finalize()
     return *this;
 }
 
+//////////////////////////////
+
+// return hex representation of digest as string
 std::string MD5::hexdigest() const
 {
     if (!finalized)
@@ -555,10 +554,14 @@ std::string MD5::hexdigest() const
     return std::string(buf);
 }
 
+//////////////////////////////
+
 std::ostream &operator<<(std::ostream &out, MD5 md5)
 {
     return out << md5.hexdigest();
 }
+
+//////////////////////////////
 
 std::string md5(const std::string str)
 {
