@@ -34,6 +34,8 @@ int main()
     name = form("name");
     if (!name.empty())
     {
+        cout << "here is my DbTex -> " << getDb() << " <-"
+             << "here is my fragment Text ->" << name << " <-";
         cout << antiPlagiarism(getDb(), name) << "\n";
     }
     else
