@@ -107,10 +107,10 @@ double calculateCoincidence(string wordsOfText[], string wordsOfFragment[], int 
 
     for (i = 0; i < quantityOfFragmentSelections; i++)
     {
-        string hashOfFragment = md5(wordsOfFragment[i] + wordsOfFragment[i + 1] + wordsOfFragment[i + 2]);
+        string hashOfFragment = (wordsOfFragment[i] + wordsOfFragment[i + 1] + wordsOfFragment[i + 2]);
         for (j = 0; j < quantityOfTextSelections; j++)
         {
-            string hashOfText = md5(wordsOfText[j] + wordsOfText[j + 1] + wordsOfText[j + 2]);
+            string hashOfText = (wordsOfText[j] + wordsOfText[j + 1] + wordsOfText[j + 2]);
             if (hashOfFragment == hashOfText)
             {
                 counterOfCoincidence++;
